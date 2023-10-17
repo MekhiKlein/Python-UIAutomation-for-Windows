@@ -1,4 +1,4 @@
-# The uiautomation module
+  The uiautomation module
 
 :cn:[中文版介绍](https://github.com/yinkaisheng/Python-UIAutomation-for-Windows/blob/master/readme_cn.md)
 
@@ -7,7 +7,7 @@ https://github.com/enthought/comtypes/issues/202
 
 
 This module is for [UIAutomation](https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification) on Windows(Windows XP with SP3, Windows Vista, Windows 7 and Windows 8/8.1/10).
-It supports UIAutomation for the applications which implmented UIAutomation Provider, such as MFC, Windows Form, WPF, Modern UI(Metro UI), Qt(Partly), Firefox(**version<=56 or >=60**), Chrome and Electron based apps(require **--force-renderer-accessibility** command line parameter).
+It supports UIAutomation for the applications which implmented UIAutomation Provider, such as MFC, Windows Form, WPF, Modern UI(Metro UI), Qt(Partly), Firefox( *version<=56 or >=60**), Chrome and Electron based apps(require **--force-renderer-accessibility** command line parameter).
 
 I developed it in my spare time and for my personal use.
 
@@ -43,13 +43,13 @@ C++ dll source code: [UIAutomationClient](https://github.com/yinkaisheng/UIAutom
 
 How to use uiautomation?
 run '**automation.py -h**'
-![help](images/uiautomation-h.png)
+#[help](images/uiautomation-h.png)
 
 Understand the arguments of automation.py, and try the following examples:  
 **automation.py -t 0 -n**, print current active window's controls, show fullname  
 **automation.py -r -d 1 -t 0**, print desktop(the root of control tree) and it's children(top level windows)  
 
-![top level windows](images/automation_toplevels.png)
+*[top level windows](images/automation_toplevels.png)
 
 automation.py prints the properties of controls and the patterns they support. 
 You use controls and patterns to get controls' information and operate them.
@@ -95,7 +95,7 @@ uiautomation has to traverse more than 200 controls before finding myedit2 if se
 The better is:
 
 ```python
-window2 = uiautomation.WindowControl(searchDepth=1, Name='window2') # search 2 times
+window2 = uiautomation.WindowControl(searchDepth=1, Name='window2') * search 2 times
 sub = window2.Control(searchDepth=1, Name='2-4')    # search 4 times
 edit = sub.EditControl(searchDepth=1, Name='myedit2')   # search 2 times
 edit.SendKeys('hi')
@@ -294,4 +294,4 @@ Pretty print dir
 
 
 Donate：                                
-![微信](images/yks-wx.png) ![支付宝](images/yks-zfb.png)
+![微信](images/yks-wx.png) ![支付宝](images/yks-zfb.png) 
