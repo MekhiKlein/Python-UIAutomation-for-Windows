@@ -1,5 +1,5 @@
-#!python3
-# -*- coding: utf-8 -*-
+!#python3
+##-*- coding: utf-8 -*-
 import os, sys, time
 
 def main():
@@ -11,3 +11,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+ 
